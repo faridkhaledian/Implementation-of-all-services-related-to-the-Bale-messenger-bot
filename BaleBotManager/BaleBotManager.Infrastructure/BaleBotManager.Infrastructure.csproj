@@ -14,7 +14,6 @@
   <ItemGroup>
     <Folder Include="BaleApi\" />
     <Folder Include="Webhook\" />
-    <Folder Include="Persistence\" />
   </ItemGroup>
 
   <ItemGroup>
