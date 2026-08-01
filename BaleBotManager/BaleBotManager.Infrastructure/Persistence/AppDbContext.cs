@@ -9,6 +9,7 @@ public class AppDbContext : DbContext
 
     public DbSet<BotUser> BotUsers { get; set; }
     public DbSet<BotMessage> BotMessages { get; set; }
+    public DbSet<BotSettings> BotSettings { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

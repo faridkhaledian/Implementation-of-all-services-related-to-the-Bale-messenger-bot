@@ -1,4 +1,7 @@
 ﻿using BaleBotManager.Application.Interfaces;
+using BaleBotManager.Application.Services;
+using BaleBotManager.Domain.Interfaces;
+using BaleBotManager.Infrastructure.BaleApi;
 using BaleBotManager.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,8 +13,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ثبت Repository ها
-builder.Services.AddScoped<IBotUserRepository, BotUserRepository>();
+builder.Services.AddHttpClient<IBaleBotClient, BaleBotClient>();
+builder.Services.AddScoped<IDashboardMessageService, DashboardMessageService>();
+builder.Services.AddScoped<IBotMessageRepository, BotMessageRepository>();
+builder.Services.AddScoped<IBotSettingsRepository, BotSettingsRepository>();
+builder.Services.AddScoped<ISettingsService, SettingsService>();
 
 var app = builder.Build();
 

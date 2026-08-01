@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <pattern id="gereh" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#F6F1E4" stroke-width="1">
+        <!-- 8-point star / gereh-chini unit -->
+        <path d="M30 4 L38 18 L54 18 L44 30 L54 42 L38 42 L30 56 L22 42 L6 42 L16 30 L6 18 L22 18 Z" />
+        <circle cx="0" cy="0" r="14" />
+        <circle cx="60" cy="0" r="14" />
+        <circle cx="0" cy="60" r="14" />
+        <circle cx="60" cy="60" r="14" />
+      </g>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#gereh)" />
+</svg>

@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BaleApi\" />
     <Folder Include="Webhook\" />
   </ItemGroup>
 
